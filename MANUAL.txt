@@ -1,0 +1,26 @@
+---------------Manual de utilização---------------
+
+		>>>>OBS<<<< 
+- Login e senha padrão para primeiro acesso: 'admin' e '12345'
+
+1. Abra o arquivo (UNIPESTANA.EXE).
+2. Entre com login e senha padrão e adicione os usuários. OBS: Somente o administrador do estabelecimento poderá adicionar ou deletar usuários.
+3. No menu, escolha as opções (digitando o número correspondente) e pressione enter para navegar pelas diferentes telas.
+4. Em caso de erro, mal funcionamento, dificuldades, dúvidas, comunicar a equipe imediatamente.
+
+*** IMPORTANTE: JAMAIS MODIFIQUE O CONTEUDO DESTA PASTA. DANOS IRREVERSÍVEIS PODEM SER CAUSADOS. ***
+
+Contato (sugestões/reclamações são bem-vindas):
+- email: jetas@hotmail.com
+- tel: (13)91234-5678
+
+Para mais informações, visite:
+- www.jetas.com.br
+
+Obrigado por utilizar nossos serviços! Volte sempre.
+
+
+-------------JETAs Software, all rights reserved.-------------
+ 
+
+ 
