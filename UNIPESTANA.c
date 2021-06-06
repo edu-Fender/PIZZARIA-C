@@ -27,8 +27,8 @@ int main(){ //funcao principal
     if (loged == 1){
 
         logo();
-        printf("\t Bem vindo ADMIN, o que deseja fazer?\n\n\t 1 - Gerenciar usuários\n\t 2 - Financeiro\n\t 3 - Sair\n");
-        printf("\n\t Digite 0 para voltar: ");
+        printf("\t Bem vindo ADMIN, o que deseja fazer?\n\n\t 1 - Gerenciar usuï¿½rios\n\t 2 - Financeiro\n\t 3 - Sair");
+        printf("\n\n\t Digite 0 para voltar: ");
         fflush(stdin); scanf("%d", &choice);
 
         switch(choice){
@@ -46,7 +46,7 @@ int main(){ //funcao principal
             case 3:
                 cls; printf("\n\t Obrigado por escolher a \x1b[33mJETA\x1b[0ms, volte sempre!! \n\n"); s; logo(1); sleep(3); exit(0);
             default:
-                printf("\n\t POR FAVOR, ESCOLHA UMA DAS OPÇÕES ACIMA!\n\n");
+                printf("\n\t POR FAVOR, ESCOLHA UMA DAS OPï¿½ï¿½ES ACIMA!\n\n");
                 pause; main();
         }
     }
@@ -55,8 +55,8 @@ int main(){ //funcao principal
 
 		logo();
 		printf("\t Bem vindo! O que deseja fazer?\n\n");
-		printf("\t  1 - Cadastrar Pizzas\n\t  2 - Cadastrar Bebidas\n\t  3 - Cadastrar Pizzaiolos\n\t  4 - Reclamações/Elogios\n\t  5 - Informações do Sistema\n\t  6 - Sair\n\t");
-		printf("\t Digite 0 para voltar: ");
+		printf("\t  1 - Cadastrar Pizzas\n\t  2 - Cadastrar Bebidas\n\t  3 - Cadastrar Pizzaiolos\n\t  4 - Reclamaï¿½ï¿½es/Elogios\n\t  5 - Informaï¿½ï¿½es do Sistema\n\t  6 - Sair");
+		printf("\n\n\t Digite 0 para voltar: ");
         fflush(stdin); scanf("%d", &choice);
 
         switch(choice){
@@ -77,15 +77,15 @@ int main(){ //funcao principal
                 feedback();
                 break;
             case 5: //pequena animacao baseada em temporizador (s)
-                cls; s; printf("\n\tSistema UNIPESTANA.\n\t"); s; printf("version.: 2.0.3\n\n\t"); s; printf("Créditos:\n\t"); s; printf("- \x1b[31mJ\x1b[0muan Pablo\n\t");
-                s; printf("- \x1b[31mE\x1b[0mduardo Franco\n\t"); s; printf("- \x1b[31mT\x1b[0males Carneiro\n\t"); s; printf("- \x1b[31mA\x1b[0mndré Fermino\n\n\t"); s; printf("\x1b[31mJETA\x1b[0ms");
+                cls; s; printf("\n\tSistema UNIPESTANA.\n\t"); s; printf("version.: 2.0.3\n\n\t"); s; printf("Crï¿½ditos:\n\t"); s; printf("- \x1b[31mJ\x1b[0muan Pablo\n\t");
+                s; printf("- \x1b[31mE\x1b[0mduardo Franco\n\t"); s; printf("- \x1b[31mT\x1b[0males Carneiro\n\t"); s; printf("- \x1b[31mA\x1b[0mndrï¿½ Fermino\n\n\t"); s; printf("\x1b[31mJETA\x1b[0ms");
                 s; printf(" Software,"); s; printf(" all rights reserved."); s; printf(" SANTOS - 2019\n\t"); s; printf("Obrigado por escolher o \x1b[31mJETA\x1b[0ms, volte sempre!! \n\n"); s; logo(1);
                 pause; main();
                 break;
             case 6:
                 cls; printf("\n\t Obrigado por escolher a \x1b[33mJETA\x1b[0ms, volte sempre!! \n\n"); s; logo(1); sleep(3); exit(0);
             default:
-                printf("\n\t POR FAVOR, ESCOLHA UMA DAS OPÇÕES ACIMA!\n\n");
+                printf("\n\t POR FAVOR, ESCOLHA UMA DAS OPï¿½ï¿½ES ACIMA!\n\n");
                 pause; main();
         }
     return 0;
@@ -121,7 +121,7 @@ int login(){ //retorna 1 ou 2 dependendo do nivel de acesso do usario (caso usua
                 return 2;
             }
             else{
-                printf("\n\t SENHA INVÁLIDA. TENTE NOVAMENTE.\n\n");
+                printf("\n\t SENHA INVï¿½LIDA. TENTE NOVAMENTE.\n\n");
                 pause; main();
             }
         }
@@ -131,7 +131,7 @@ int login(){ //retorna 1 ou 2 dependendo do nivel de acesso do usario (caso usua
     }
 
     fclose(file);
-    printf("\n\t USUÁRIO INVÁLIDO. TENTE NOVAMENTE.\n\n");
+    printf("\n\t USUï¿½RIO INVï¿½LIDO. TENTE NOVAMENTE.\n\n");
     pause; main();
 }
 
@@ -143,7 +143,7 @@ void cadastro(){ //cadastra os usuarios em um arquivo txt (user e senha)
 
     FILE*file = fopen("DATABASE\\DATABASE.txt", "a+");
 
-    printf ("\t O que deseja fazer?\n\n\t 1 - Cadastrar usuário\n\t 2 - Visualizar lista de usuarios cadastrados\n\t 3 - Resetar lista de usuários (CUIDADO)");
+    printf ("\t O que deseja fazer?\n\n\t 1 - Cadastrar usuï¿½rio\n\t 2 - Visualizar lista de usuarios cadastrados\n\t 3 - Resetar lista de usuï¿½rios (CUIDADO)");
     printf("\n\n\t Digite 0 para voltar: ");
     fflush(stdin); scanf("%d", &choice);
 
@@ -153,7 +153,7 @@ void cadastro(){ //cadastra os usuarios em um arquivo txt (user e senha)
             main();
             break;
         case 1:
-            cls; printf("\t >>CADASTRO DE USUÁRIOS<<");
+            cls; printf("\t >>CADASTRO DE USUï¿½RIOS<<");
             printf("\n\n\t Digite o login: ");
             scanf("%s", user);
             printf("\t Digite a senha: ");
@@ -161,7 +161,7 @@ void cadastro(){ //cadastra os usuarios em um arquivo txt (user e senha)
 
             fprintf(file, "%s\n", user);
             fprintf(file, "%s\n\n", pass);
-            printf("\n\t USUÁRIO CADASTRADO COM SUCESSO!\n\n");
+            printf("\n\t USUï¿½RIO CADASTRADO COM SUCESSO!\n\n");
             fclose(file);
             pause; cadastro();
             break;
@@ -184,13 +184,13 @@ void cadastro(){ //cadastra os usuarios em um arquivo txt (user e senha)
             cls;
             fopen("DATABASE\\DATABASE.TXT", "w"); //reseta a lista ao abrir o arquivo em modo "w" (write)
             fprintf(file, "%s\n\n", "//");
-            printf("\n\t LISTA DE USUÁRIOS RESETADA COM SUCESSO!\n\n");
+            printf("\n\t LISTA DE USUï¿½RIOS RESETADA COM SUCESSO!\n\n");
             fclose(file);
             pause; cadastro();
             break;
 
         default:
-            printf("\n\t POR FAVOR, ESCOLHA UMA DAS OPÇÕES ACIMA!\n\n");
+            printf("\n\t POR FAVOR, ESCOLHA UMA DAS OPï¿½ï¿½ES ACIMA!\n\n");
             pause; cadastro();
     }
 }
@@ -201,7 +201,7 @@ void pizzas(){ //cadastra pizzas
     int choice;
     char pizza[20], price[20], line[20];
 
-    printf ("\t O que deseja fazer?\n\n\t 1 - Cadastrar pizza\n\t 2 - Visualizar Cardápio de pizzas\n\t 3 - Resetar Cardápio (CUIDADO)");
+    printf ("\t O que deseja fazer?\n\n\t 1 - Cadastrar pizza\n\t 2 - Visualizar Cardï¿½pio de pizzas\n\t 3 - Resetar Cardï¿½pio (CUIDADO)");
     printf("\n\n\t Digite 0 para voltar: ");
     fflush(stdin); scanf("%d", &choice);
 
@@ -215,7 +215,7 @@ void pizzas(){ //cadastra pizzas
             cls; printf("\n\t >>CADASTRO DE PIZZA<<");
             printf("\n\n\t Digite o nome da pizza: ");
             scanf("%s", pizza);
-            printf("\t Digite o preço da pizza: R$");
+            printf("\t Digite o preï¿½o da pizza: R$");
             scanf("%s", price);
 
             fprintf(file, "%s\n", pizza);
@@ -250,7 +250,7 @@ void pizzas(){ //cadastra pizzas
             break;
 
         default:
-            printf("\n\t POR FAVOR, ESCOLHA UMA DAS OPÇÕES ACIMA!\n\n");
+            printf("\n\t POR FAVOR, ESCOLHA UMA DAS OPï¿½ï¿½ES ACIMA!\n\n");
             pause; pizzas();
     }
 }
@@ -261,7 +261,7 @@ void drinks(){ //cadastra bebidas
     int choice;
     char drink[20], price[20], line[20];
 
-    printf ("\t O que deseja fazer?\n\n\t 1 - Cadastrar bebida\n\t 2 - Visualizar Cardápio de bebidas\n\t 3 - Resetar Cardápio (CUIDADO)");
+    printf ("\t O que deseja fazer?\n\n\t 1 - Cadastrar bebida\n\t 2 - Visualizar Cardï¿½pio de bebidas\n\t 3 - Resetar Cardï¿½pio (CUIDADO)");
     printf("\n\n\t Digite 0 para voltar: ");
     fflush(stdin); scanf("%d", &choice);
 
@@ -275,7 +275,7 @@ void drinks(){ //cadastra bebidas
             cls; printf("\n\t >>CADASTRO DE BEBIDA<<");
             printf("\n\n\t Digite o nome da bebida: ");
             scanf("%s", drink);
-            printf("\t Digite o preço da bebida: R$");
+            printf("\t Digite o preï¿½o da bebida: R$");
             scanf("%s", price);
 
             fprintf(file, "%s\n", drink);
@@ -309,7 +309,7 @@ void drinks(){ //cadastra bebidas
             break;
 
         default:
-            printf("\n\t POR FAVOR, ESCOLHA UMA DAS OPÇÕES ACIMA!\n\n");
+            printf("\n\t POR FAVOR, ESCOLHA UMA DAS OPï¿½ï¿½ES ACIMA!\n\n");
             pause; drinks();
     }
 }
@@ -335,7 +335,7 @@ void pizzers(){ //cadastra pizzaiolos
             cls; printf("\n\t >>CADASTRO DE PIZZAIOLO<<");
             printf("\n\n\t Digite o nome do pizzaiolo: ");
             scanf("%s", pizzer);
-            printf("\t Informações adicionais: ");
+            printf("\t Informaï¿½ï¿½es adicionais: ");
             scanf("%s", text);
 
             fprintf(file, "Pizzaiolo: %s\n", pizzer);
@@ -374,7 +374,7 @@ void pizzers(){ //cadastra pizzaiolos
             break;
 
         default:
-            printf("\n\t POR FAVOR, ESCOLHA UMA DAS OPÇÕES ACIMA!\n\n");
+            printf("\n\t POR FAVOR, ESCOLHA UMA DAS OPï¿½ï¿½ES ACIMA!\n\n");
             pause; pizzers();
     }
 }
@@ -384,10 +384,10 @@ void feedback(){ //cadastra sugestoes/reclamacoes
     logo();
     char text[200];
     FILE*file = fopen("DATABASE\\FEEDBACK.txt", "a+");
-    cls; printf("\t Reclamação/sugestão:\n\n");
+    cls; printf("\t Reclamaï¿½ï¿½o/sugestï¿½o:\n\n");
     scanf("\t%s", text);
     fprintf(file, "%s\n", text);
-    printf("\n\t RECLAMAÇÃO/SUGESTÃO REGISTRADA COM SUCESSO.\n\n");
+    printf("\n\t RECLAMAï¿½ï¿½O/SUGESTï¿½O REGISTRADA COM SUCESSO.\n\n");
     fclose(file);
     pause; main();
 }
